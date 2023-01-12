@@ -21,10 +21,10 @@ tanzu apps workload tail app-maven-kpack
 
 ## Configuration
 
-| Item            | Config                  |
-| --------------- | ----------------------- |
-| Scan Policy     | Default                 |
-| tap-values.yaml | na                      |
-| Supply Chain    | source-test-scan-to-url |
+| Item            | Config                                                                                |
+| --------------- | ------------------------------------------------------------------------------------- |
+| Scan Policy     | [default](resources/scan-policy.yaml)                                                 |
+| Pipeline        | [developer-defined-tekton-pipeline](resources/developer-defined-tekton-pipeline.yaml) |
+| tap-values.yaml | na                                                                                    |
+| Supply Chain    | source-test-scan-to-url                                                               |
 
-# app-maven-kpack

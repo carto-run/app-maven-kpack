@@ -1,23 +1,22 @@
-# app-maven-kaniko
+# app-maven-kpack
 
 ## Creating the Workload
 
 ```
-tanzu apps workload create app-maven-kaniko \
+tanzu apps workload create app-maven-kpack \
   --namespace dev \
   --git-branch main \
-  --git-repo https://github.com/carto-run/app-maven-kaniko \
+  --git-repo https://github.com/carto-run/app-maven-kpack \
   --label apps.tanzu.vmware.com/has-tests=true \
-  --label app.kubernetes.io/part-of=app-maven-kaniko \
+  --label app.kubernetes.io/part-of=app-maven-kpack \
   --type web \
-  --param dockerfile=./Dockerfile \
   --yes
 ```
 
 ## Logs
 
 ```
-tanzu apps workload tail app-maven-kaniko
+tanzu apps workload tail app-maven-kpack
 ```
 
 ## Configuration

@@ -10,6 +10,7 @@ tanzu apps workload create app-maven-kpack \
   --label apps.tanzu.vmware.com/has-tests=true \
   --label app.kubernetes.io/part-of=app-maven-kpack \
   --type web \
+  --env BP_JVM_VERSION=17 \
   --yes
 ```
 
